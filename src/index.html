@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Age Calculator</title>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="container flex items-center gap-8 mx-44">
+        <div style="width: 500px; height: 300px;" class="image rounded-lg translate-y-14">
+            <img class="h-full rounded-lg" src="./age.png" alt="">
+        </div>
+        <div style="width: 430px; height: 500px;" class="age-box bg-white rounded-lg mt-28 flex flex-col justify-between mx-5 px-6">
+        <div class="heading bg-blue-900 w-96 h-20 rounded-md flex items-center gap-2 px-10 translate-y-5">
+            <div class="w-10"><img src="./calender Background Removed.png" alt=""></div>
+            <div class="text-white font-bold text-3xl"><h1>Your Date Of Birth</h1></div>
+        </div>
+            <div class="input-age w-96 h-32 flex translate-y-5 mx-2">
+                <div class="w-32 h-32">
+                    <input type="number" id="day" name="day" min="1" max="31" placeholder="DD" class="input-field bg-slate-300 w-28 h-20 rounded-xl px-5">
+                    <label for="day" class="block text-lg font-bold translate-x-8 translate-y-2">Day</label>
+                </div>
+                <div class="w-32 h-32">
+                    <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" class="input-field bg-slate-300 w-28 h-20 rounded-xl px-5">
+                    <label for="month" class="block text-lg font-bold translate-x-6 translate-y-2">Month</label>
+                </div>
+                <div class="w-32 h-32">
+                    <input type="number" id="year" name="year" min="1900" max="2100" placeholder="YYYY" class="input-field bg-slate-300 w-28 h-20 rounded-xl px-5">
+                    <label for="year" class="block text-lg font-bold translate-x-8 translate-y-2">Year</label>
+                </div>
+        </div>
+        <div class="age-till-today bg-blue-900 w-96 h-20 rounded-md flex items-center gap-2 px-2 translate-y-5">
+            <div class="w-20 h-10"><img src="./all-ages-people Background Removed.png" alt=""></div>
+            <div class="text-white font-bold text-3xl"><h1>Your Age Till Today</h1></div>
+        </div>
+        <div class="calculate-age w-96 h-40 flex translate-y-5 mx-2">
+            <div class="w-32 h-32">
+                <div class="calculate-day text-black text-center py-7 text-2xl bg-slate-300 h-20 w-28 rounded-xl"></div>
+                <div><h1 class="text-lg font-bold translate-x-8 translate-y-2">Years</h1></div>
+            </div>
+            <div class="w-32 h-32">
+                <div class="calculate-month text-black text-center py-7 text-2xl bg-slate-300 h-20 w-28 rounded-xl"></div>
+                <div><h1 class="text-lg font-bold translate-x-6 translate-y-2">Months</h1></div>
+            </div>
+            <div class="w-32 h-32">
+                <div class="calculate-year text-black text-center py-7 text-2xl bg-slate-300 h-20 w-28 rounded-xl"></div>
+                <div><h1 class="text-lg font-bold translate-x-8 translate-y-2">Days</h1></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
